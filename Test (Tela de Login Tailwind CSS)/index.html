@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="custom.css" rel="stylesheet">
+    <title>Tela de Login Tailwind</title>
+</head>
+
+<body>
+    <div class="min-h-screen flex flex-col justify-center bg-gray-700">
+        <div class="bg-white mx-auto max-w-md py-8 px-10 shadow rounded-lg">
+            <div class="mb-4">
+                <img src="images/undraw_login_re_4vu2.svg" alt="image-login">
+            </div>
+            <form action="">
+                <div class="mb-4">
+                    <input type="email" placeholder="Digite Seu E-mail"
+                        class="appearence-none block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Digite Sua Senha"
+                        class="appearence-none block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-50 focus:bg-white border border-gray-200 focus:border-gray-500 rounded focus:outline-none">
+                </div>
+                <div class="mb-4">
+                    <button
+                        class="inline-block w-full px-8 py-4 leading-none text-white bg-gray-600 hover:bg-gray-700 font-semibold rounded shadow">Entrar</button>
+                </div>
+                <div class="nb-4">
+                    <p><a href="#" class="text-indigo-600">Esqueci Minha Senha</a></p>
+                    <p>Não Tem uma Conta? <a href="#" class="text-indigo-600">Crie Sua Conta</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
